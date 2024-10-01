@@ -27,6 +27,14 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Updates every monday!"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
 Tab:AddButton({
 	Name = "Beat dropper 🕳️",
 	Callback = function()
