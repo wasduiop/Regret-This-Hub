@@ -1,7 +1,7 @@
 wait(1)
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Orion = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Regret this Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "somethingreallyrelevant", IntroEnabled = false})
+local Window = Orion:MakeWindow({Name = "Regret this Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "somethingreallyrelevant", IntroEnabled = false})
 
 --[[
 Name = <string> - The name of the UI.
@@ -15,7 +15,7 @@ Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
-local Tab = Window:MakeTab({
+local MainTab = Window:MakeTab({
 	Name = "Auto beat",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
