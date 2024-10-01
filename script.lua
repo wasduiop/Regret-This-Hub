@@ -1,1 +1,431 @@
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v6=string.rep;local v134=table.concat;local v146=table.insert;local v259=math.ldexp;local v111=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then local v86=0;while true do if (v86==0) then v19=v0(v3(v30,1,1));return "";end end else local v87=0;local v88;while true do if (v87==0) then v88=v2(v0(v30,16));if v19 then local v129=0;local v130;while true do if (1==v129) then return v130;end if (v129==0) then v130=v6(v88,v19);v19=nil;v129=1;end end else return v88;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v89=(v31/((5 -3)^(v32-(2 -(1638 -(1523 + 114))))))%((3 -1)^(((v33-(2 -1)) -(v32-(620 -(555 + 64)))) + (932 -(857 + (105 -31))))) ;return v89-(v89%(569 -(367 + 201))) ;else local v90=927 -(193 + 21 + 713) ;local v91;while true do if (v90==0) then v91=(1 + 1)^(v32-(1 + 0)) ;return (((v31%(v91 + v91))>=v91) and 1) or (877 -((1347 -(68 + 997)) + 595)) ;end end end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35=1270 -(226 + 1044) ;local v36;local v37;while true do if (v35==((6 -2) -3)) then return (v37 * (373 -(32 + 85))) + v36 ;end if (v35==(0 + 0)) then v36,v37=v1(v16,v18,v18 + 1 + (1 -0) );v18=v18 + (959 -(892 + 65)) ;v35=2 -(351 -(87 + 263)) ;end end end local function v23() local v38=0;local v39;local v40;local v41;local v42;while true do if (v38==(180 -(67 + 113))) then v39,v40,v41,v42=v1(v16,v18,v18 + 3 + 0 );v18=v18 + (9 -5) ;v38=1 + 0 ;end if (v38==(1 -0)) then return (v42 * (66680831 -49903615)) + (v41 * (66488 -(802 + 150))) + (v40 * (689 -433)) + v39 ;end end end local function v24() local v43=v23();local v44=v23();local v45=1 + 0 ;local v46=(v20(v44,998 -(915 + 82) ,(18 + 38) -(30 + 6) ) * ((2 + 0)^32
+wait(1)
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Regret this | Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "realpdffiles", IntroEnabled = true, IntroText = "Regret this"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Auto-beat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Updates every monday!"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Beat dropper ðŸ•³ï¸",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-40, -523, 23)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat banana wipeout ðŸŒ",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-185, 5, -5)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat pink hand ðŸ©·",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-419, 12, 47)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat teapot ðŸ«–",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-305, 15, 26)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				wait(1)
+				pl.CFrame = location	
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+				wait(1)
+				pl.CFrame = location
+       	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat mystery wheel ðŸŽ¡",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-12, 33, 12)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat party meteorites â˜„ï¸",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(290, 13, 29)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "survive ancient race ",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(153, 41, 360)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat fnaf ðŸ»",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-3, 33, 23)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat THE CUBE â¬œ",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-5, 33, 24)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat minefield ðŸ’¥",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-190, 4, 15)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat RUN ðŸƒ",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(-563, 1, 25)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat rock buttons ðŸª¨",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local location = CFrame.new(447, 67, -271)
+			local humanoid = game.Players.LocalPlayer.Character.Humanoid
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat glass bridge ðŸŒ‰",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-214, 5, 25)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat numbers ðŸ”¢",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-4, 5, 23)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Beat gumball machine",
+	Callback = function()
+      		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-79, 188, 12)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Visuals",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+	Tab:AddToggle({
+	Name = "Fullbright",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+			game:GetService("Lighting").Brightness = 2
+			game:GetService("Lighting").ClockTime = 14
+			game:GetService("Lighting").FogEnd = 100000
+			game:GetService("Lighting").GlobalShadows = false
+			game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+		else
+			game:GetService("Lighting").Brightness = 10
+			game:GetService("Lighting").ClockTime = 12
+			game:GetService("Lighting").FogEnd = 10000
+			game:GetService("Lighting").GlobalShadows = true
+			game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(127, 127, 127)
+		end
+	end
+})
+
+--[[
+Name = <string> - The name of the toggle.
+Default = <bool> - The default value of the toggle.
+Callback = <function> - The function of the toggle.
+]]
