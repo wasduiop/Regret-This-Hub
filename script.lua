@@ -53,6 +53,23 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
+	Name = "Beat red ball temple 🔴",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-210, 59, 731)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
 	Name = "Beat banana wipeout 🍌",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
@@ -63,6 +80,7 @@ Tab:AddButton({
 			pl.CFrame = location
   	end    
 })
+
 
 --[[
 Name = <string> - The name of the button.
@@ -85,6 +103,28 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+
+
+Tab:AddButton({
+	Name = "Beat mining flood 🌊",
+	Callback = function()
+      		local pl =
+game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-161, -109, 66)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
 
 Tab:AddButton({
 	Name = "Beat teapot ☕ (op money)",
@@ -429,4 +469,3 @@ Name = <string> - The name of the toggle.
 Default = <bool> - The default value of the toggle.
 Callback = <function> - The function of the toggle.
 ]]
-
