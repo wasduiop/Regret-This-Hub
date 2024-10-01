@@ -36,7 +36,7 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
-	Name = "Beat dropper ðŸ•³ï¸",
+	Name = "Beat dropper 🕳️",
 	Callback = function()
 		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 		local location = CFrame.new(-40, -523, 23)
@@ -53,7 +53,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat banana wipeout ðŸŒ",
+	Name = "Beat banana wipeout 🍌",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-185, 5, -5)
@@ -70,7 +70,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat pink hand ðŸ©·",
+	Name = "Beat pink hand 🩷",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-419, 12, 47)
@@ -87,7 +87,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat teapot ðŸ«–",
+	Name = "Beat teapot ☕ (op money)",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-305, 15, 26)
@@ -206,7 +206,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat mystery wheel ðŸŽ¡",
+	Name = "Survive mystery wheel 🎡",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-12, 33, 12)
@@ -223,7 +223,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat party meteorites â˜„ï¸",
+	Name = "Survive party meteorites ☄️",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(290, 13, 29)
@@ -240,7 +240,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "survive ancient race ",
+	Name = "Beat ancient race",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(153, 41, 360)
@@ -257,7 +257,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat fnaf ðŸ»",
+	Name = "Beat fnaf 🐻",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-3, 33, 23)
@@ -274,7 +274,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat THE CUBE â¬œ",
+	Name = "Beat THE CUBE ⬜",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-5, 33, 24)
@@ -291,7 +291,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat minefield ðŸ’¥",
+	Name = "Beat minefield 💥",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-190, 4, 15)
@@ -308,7 +308,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat RUN ðŸƒ",
+	Name = "Beat RUN 🏃",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(-563, 1, 25)
@@ -325,7 +325,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat rock buttons ðŸª¨",
+	Name = "Beat rock buttons 🪨",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 			local location = CFrame.new(447, 67, -271)
@@ -342,7 +342,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat glass bridge ðŸŒ‰",
+	Name = "Beat glass bridge 🌉",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 		local location = CFrame.new(-214, 5, 25)
@@ -359,7 +359,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat numbers ðŸ”¢",
+	Name = "Beat numbers 🔢",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 		local location = CFrame.new(-4, 5, 23)
@@ -376,7 +376,7 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Beat gumball machine",
+	Name = "Beat gumball machine 🟣",
 	Callback = function()
       		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 		local location = CFrame.new(-79, 188, 12)
@@ -429,3 +429,4 @@ Name = <string> - The name of the toggle.
 Default = <bool> - The default value of the toggle.
 Callback = <function> - The function of the toggle.
 ]]
+
