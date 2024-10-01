@@ -672,3 +672,4 @@ Callback = <function> - The function of the toggle.
 ]]
 
 
+OrionLib:Init()
